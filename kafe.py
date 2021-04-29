@@ -48,8 +48,8 @@ args.tied = True
 print(args)
 
 class KAFEtrainer:
+  
     def __init__(self, input_file, args):
-
         self.adv_bias = args.adv_bias
         self.output_dim = args.output_dim
         self.data = DataReader(input_file, args.min_count, args.root_size, self.adv_bias)

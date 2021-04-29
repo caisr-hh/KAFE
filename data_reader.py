@@ -113,6 +113,7 @@ class DataReader:
 # -----------------------------------------------------------------------------------------------------------------
 
 class KAFEdataset(Dataset):
+    
     def __init__(self, data, window_size, neg_samples):
         self.data = data
         self.window_size = window_size

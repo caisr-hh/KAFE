@@ -21,9 +21,9 @@ from model import KAFEModel, AdvModel
 parser = argparse.ArgumentParser(description='KAFE arguments')
 parser.add_argument('--data', type=str, default='data_in/',
                     help='Location of the input data file. Txt format. One line per visit')
-parser.add_argument('--emb_dimension', type=int, default=32,
+parser.add_argument('--emb_dimension', type=int, default=256,
                     help='Word embeddings size')
-parser.add_argument('--initial_lr', type=float, default=0.01,
+parser.add_argument('--initial_lr', type=float, default=0.001,
                     help='Learning rate')
 parser.add_argument('--adv_bias', type=float, default=75.0,
                     help='Adversarial bias. Distinction between rare and frequent words')
